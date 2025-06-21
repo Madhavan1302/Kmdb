@@ -33,20 +33,20 @@ export const MovieDetails = ({title}) => {
   }
   return (
     <div className="container">
-      <h4 className="mx-2 text-danger border-bottom">{movie.title}</h4>
+      <h4 className="mx-2 fcolor border-bottom">{movie.title}</h4>
       <div className="row row-cols-1">
       <div className="col-md-4 col-sm-12 ">
         <img src={image}alt="" className="img-fluid img-thumbnail"/>
       </div>
       <div className="col-md-8 col-sm-12">
         <h5 className="text-primary">{movie.title}</h5>
-        <p>{movie.overview}</p>
+        <p className="fwhite">{movie.overview}</p>
         {movie.genres?<p className="d-flex gap-3">{movie.genres.map((genre)=>(<span className="badge bg-danger" key={genre.id}>{genre.name}</span>))}</p>:""}
-        <p>
+        <p className="fwhite">
           <i className="bi bi-star-fill text-warning "></i>
           {movie.vote_average} Rating | {movie.vote_count} Reviews
         </p>
-        <table className="w-50 table-bordered mt-2">
+        <table className="w-50 table-bordered mt-2 fwhite">
           <tbody>
           <tr>
             <th>Runtime</th>

@@ -10,9 +10,9 @@ export const MoviesList = ({title,apiPath}) => {
   
   return (
     <div className="container">
-      <h5 className="border-bottom text-danger p-2">{title}</h5>
+      <h5 className="border-bottom fcolor p-2">{title}</h5>
       <div className="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-2"> 
-        {data.map((data)=>(<Card key={data.id} id={data.id} title={data.title} imgPath={data.backdrop_path} desc={data.overview} voteAvg={data.vote_average} voteCount={data.vote_count}/>))}
+        {data.map((data)=>(<Card key={data.id} id={data.id} title={data.title} imgPath={data.backdrop_path} desc={data.overview} voteAvg={data.vote_average} voteCount={data.vote_count} list={false} thumb={data.poster_path}/>))}
       </div>
     </div>
   )

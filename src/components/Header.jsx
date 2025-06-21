@@ -11,7 +11,7 @@ export const Header = () => {
   }
   return (
     <nav
-      className="navbar navbar-expand-md bg-primary fixed-top navbar-dark"
+      className="navbar white-glow navbar-expand-md theme fixed-top navbar-dark"
     >
       <div className="container">
         <NavLink to={"/"} className={"navbar-brand"}>Kmdb</NavLink>
@@ -34,17 +34,17 @@ export const Header = () => {
                 <span className="visually-hidden">(current)</span></NavLink>
             </li>
             <li className="nav-item">
-            <NavLink className="nav-link " to={"movies/top-rated"} 
+            <NavLink className="nav-link " to={"movie/top_rated"} 
                 >Top Rated
                 <span className="visually-hidden">(current)</span></NavLink>
             </li>
             <li className="nav-item">
-            <NavLink className="nav-link " to={"movies/popular"}
+            <NavLink className="nav-link " to={"movie/popular"}
                 >Popular
                 <span className="visually-hidden">(current)</span></NavLink>
             </li>
             <li className="nav-item">
-            <NavLink className="nav-link " to={"movies/upcoming"}
+            <NavLink className="nav-link " to={"movie/upcoming"}
                 >Upcoming
                 <span className="visually-hidden">(current)</span></NavLink>
             </li>

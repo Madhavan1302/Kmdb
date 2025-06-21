@@ -33,7 +33,7 @@ body{
     object-fit:contain;
 }
 .movie-list{
-    overflow-x: hidden;
+    overflow-x: auto;
     overflow-y: hidden;
     scroll-behavior: smooth;
     scrollbar-width: none;
